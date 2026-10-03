@@ -2,33 +2,29 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Independent Researcher
 
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+profile: false
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+news: false
+selected_papers: false
+social: false
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+<div class="contact-icons mb-4 fs-3">
+  <a href="mailto:shailohpeterson@gmail.com" title="email" class="text-reset me-3"><i class="fa-solid fa-envelope"></i></a>
+  <a href="https://github.com/baddest-cmd" target="_blank" title="GitHub" class="text-reset"><i class="fa-brands fa-github"></i></a>
+</div>
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+### Foundations in behaviour and drift
+At the University of Pretoria, I photographed music and art events for the student newspaper *Perdeby* while studying two related problems: statistical concept drift in machine learning and moral hazard in economics. The overlap shaped my focus. Statistical models degrade as real-world distributions shift, and textbook economic models fail to predict human behaviour in complex environments. Linking behavioural incentives with dynamic system architecture became the centre of my work.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+### Industry deployment and distribution shift
+Over the following years, I applied this approach across industry: building preprocessing pipelines for behavioural models at Standard Bank, engineering machine learning optimisation models at Skycode, prototyping enterprise AI tools at Toptal, and designing cloud personalisation architecture at Vodacom Group SA. In each role, production models optimised toward centralised baselines. Without active intervention, these systems diluted local languages, regional culture, and user context. These alignment risks were neglected at the deployment level, where models interact with the public.
+
+### Transition to independent safety research
+In July 2026, I left my industry roles to focus on these deployment-level safety gaps. Industry incentives do not prioritise auditing unmonitored drift after launch, making independent technical evaluation necessary.
+
+To measure this drift directly, I self-funded an empirical audit using music recommendation engines as a bounded testbed. This project tracked algorithmic flattening and unmonitored policy drift in a controlled setting. The feedback loops that erode cultural representation in consumer apps stem from the same control failures that threaten autonomous agentic systems, automated governance, and public infrastructure. If we cannot measure and correct objective drift in low-stakes systems today, we cannot govern frontier models deployed at scale.
+
+Today, I work full-time as an independent researcher developing technical evaluation infrastructure. In collaboration with local research labs, my work supports emerging safety organisations, national deployment observatories, and public-interest evaluation pipelines.

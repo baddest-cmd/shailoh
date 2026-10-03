@@ -1,0 +1,46 @@
+<!-- Favicon override for 🐥 -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐥</text></svg>">
+<link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐥</text></svg>">
+<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐥</text></svg>">
+
+<!-- Metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>
+  {% if site.title == "blank" %}
+    {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}
+  {% else %}
+    {{ site.title }}
+  {% endif %}
+  {% if page.title and page.title != "blank" %} | {{ page.title }}{% endif %}
+</title>
+<meta name="author" content="{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}" />
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+
+<!-- Bootstrap & Theme CSS -->
+<link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url | bust_file_cache }}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nRrB4tR33ExKNOa2e45SEAE5fChYTfCW=" crossorigin="anonymous" />
+
+<!-- Bootstrap Table -->
+<link defer rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css">
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | relative_url | bust_file_cache }}">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+<!-- Code Syntax Highlighting -->
+<link rel="stylesheet" href="{{ '/assets/css/jekyll-pygments-themes-github.base.css' | relative_url | bust_file_cache }}" media="" id="highlight_theme_light" />
+
+<!-- Styles -->
+{% if site.icon.size <= 4 %}
+<link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐥</text></svg>">
+{% endif %}
+
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url | bust_file_cache }}">
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+<!-- Dark Mode -->
+<link rel="stylesheet" href="{{ '/assets/css/jekyll-pygments-themes-native.base.css' | relative_url | bust_file_cache }}" media="none" id="highlight_theme_dark" />
+<script src="{{ '/assets/js/theme.js' | relative_url | bust_file_cache }}"></script>
+<script src="{{ '/assets/js/dark_mode.js' | relative_url | bust_file_cache }}"></script>
